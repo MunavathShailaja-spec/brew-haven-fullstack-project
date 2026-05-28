@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                ☕ Brew Haven
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Menu -->
+            <div class="menu-toggle">
+                ☰
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+   <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Freshly Brewed Happiness</h1>
+
+            <p>
+                Experience the rich aroma and taste of handcrafted coffee
+                made with love and premium beans.
+            </p>
+
+            <button>Order Now</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop" alt="Coffee Image">
+        </div>
+
+    </section>
+
+    <section class="features">
+
+    <h2>Why Choose Us</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-box">
+            <h3>Premium Beans</h3>
+            <p>Freshly sourced premium coffee beans.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Cozy Ambience</h3>
+            <p>Comfortable and aesthetic environment.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Fast Service</h3>
+            <p>Quick and friendly customer service.</p>
+        </div>
+
+    </div>
+
+</section>
+    <!-- ================= MENU SECTION ================= -->
+
+    <section class="menu" id="menu">
+
+        <h2>Popular Coffee</h2>
+
+        <div class="menu-container">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" alt="Cappuccino">
+
+                <h3>Cappuccino</h3>
+
+                <p>Rich espresso blended with creamy milk foam.</p>
+
+                <span>₹199</span>
+<div class="quantity-controls">
+
+    <button onclick="decreaseQuantity('Cappuccino', 199)">-</button>
+
+    <span id="Cappuccino-quantity">0</span>
+
+    <button onclick="increaseQuantity('Cappuccino', 199)">+</button>
+
+</div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Latte">
+
+                <h3>Latte</h3>
+
+                <p>Smooth and creamy coffee with steamed milk.</p>
+
+                <span>₹179</span>
+
+                <div class="quantity-controls">
+
+    <button onclick="decreaseQuantity('Latte', 179)">
+        -
+    </button>
+
+    <span id="Latte-quantity">0</span>
+
+    <button onclick="increaseQuantity('Latte', 179)">
+        +
+    </button>
+
+</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop" alt="Espresso">
+
+                <h3>Espresso</h3>
+
+                <p>Strong and bold flavor for true coffee lovers.</p>
+
+                <span>₹149</span>
+
+                <div class="quantity-controls">
+
+    <button onclick="decreaseQuantity('Espresso', 149)">-</button>
+
+    <span id="Espresso-quantity">0</span>
+
+    <button onclick="increaseQuantity('Espresso', 149)">+</button>
+
+</div>
+            </div>
+
+            
+            <!-- Card 4 -->
+             <div class="card">
+    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=800&auto=format&fit=crop" alt="Mocha">
+
+    <h3>Mocha</h3>
+
+    <p>Chocolate flavored coffee blended with creamy milk.</p>
+
+    <span>₹219</span>
+
+    <div class="quantity-controls">
+
+    <button onclick="decreaseQuantity('Mocha', 219)">-</button>
+
+    <span id="Mocha-quantity">0</span>
+
+    <button onclick="increaseQuantity('Mocha', 219)">+</button>
+
+</div>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop" alt="Cold Brew">
+
+    <h3>Cold Brew</h3>
+
+    <p>Refreshing cold coffee brewed slowly for smooth taste.</p>
+
+    <span>₹189</span>
+
+    <div class="quantity-controls">
+
+    <button onclick="decreaseQuantity('Cold Brew', 189)">-</button>
+
+    <span id="Cold Brew-quantity">0</span>
+
+    <button onclick="increaseQuantity('Cold Brew', 189)">+</button>
+
+</div>
+</div>
+
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=800&auto=format&fit=crop" alt="Americano">
+
+    <h3>Americano</h3>
+
+    <p>Bold espresso diluted with hot water for rich flavor.</p>
+
+    <span>₹169</span>
+
+    <div class="quantity-controls">
+
+    <button onclick="decreaseQuantity('Americano', 169)">-</button>
+
+    <span id="Americano-quantity">0</span>
+
+    <button onclick="increaseQuantity('Americano', 169)">+</button>
+
+</div>
+</div>
+            
+
+        </div>
+
+    </section>
+
+<!-- ================= CART SECTION ================= -->
+
+<section class="cart-section">
+
+    <h2>Your Cart 🛒</h2>
+
+    <div id="cart-items">
+        <p>No items added yet.</p>
+    </div>
+
+    <h3>Total: ₹<span id="cart-total">0</span></h3>
+
+    <button id="place-order-btn">
+        Place Order
+    </button>
+
+</section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-text">
+            <h2>About Us</h2>
+
+            <p>
+                At Brew Haven, we serve premium quality coffee crafted
+                with passion. Our goal is to create a cozy space where
+                every sip feels special.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ================= REVIEW SECTION ================= -->
+
+    <section class="reviews" id="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review-container">
+
+            <div class="review-card">
+                <p>
+                    “Best coffee shop ever! The ambiance and coffee are amazing.”
+                </p>
+
+                <h4>- Sarah</h4>
+            </div>
+
+            <div class="review-card">
+                <p>
+                    “Absolutely loved the cappuccino and the service.”
+                </p>
+
+                <h4>- John</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <h3>☕ Brew Haven</h3>
+
+        <p>Email: brewhaven@gmail.com</p>
+
+        <p>Phone: +91 9876543210</p>
+
+        <div class="social-icons">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+</div>
+
+
+        <p>© 2026 Brew Haven. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+
+</body>
+</html>
